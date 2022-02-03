@@ -14,7 +14,7 @@ router.get("/", (req, res, next) => {
             { path: "/api/v1/song-detail/ZWA7UB8U", params: [] },
             { path: "/api/v1/nghe-si/Khoa", params: ["keyword"] },
             { path: "/api/v1/lyric/ZWA7UB8U", params: ["id"] },
-            { path: "/api/v1/search/Tet-Dong-Day", params: ["keyword"] },
+            { path: "/api/v1/search/:keyword", params: ["keyword"] },
             { path: "/api/v1/playlist-mv/67OAAOCF", params: ["id", "page", "count"] },
             { path: "/api/v1/category-mv/67OAAOCF", params: ["id"] },
             { path: "/api/v1/video/stream/67OAAOCF/", params: ["id"] },
