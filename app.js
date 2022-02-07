@@ -7,7 +7,7 @@ const app = express();
 const ApiRouter = require("./router");
 const cors = require("cors");
 
-const originAllowList = [process.env.BASE_URL, "http://192.168.20.102"];
+const originAllowList = "*";
 
 app.use(cors({ origin: originAllowList }));
 app.use(logger("dev"));
